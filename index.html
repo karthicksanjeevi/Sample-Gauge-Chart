@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Guage Charts in C3 JS</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.13/c3.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./myStyle.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.13/c3.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid utilizeFullHeight">
+    		<div id="header" class="setHeightHeader" style="background-color:#F7FFAB">
+    				 <div class="row utilizeFullHeight">
+    				 	<div class="col-sm-2">
+    					</div>
+    				    <div class="col-sm-8">
+    						<p id="dashboardTitle" class="lead text-center headerText"><strong>Sample Gauge Using C3 JS</strong></p>
+    					</div>
+    					<div class="col-sm-2">
+    					</div>
+    				 </div>
+  			</div>
+        <div id="graphContainer" class="setHeightGraph" style="background-color:#F7FFAB">
+          <div class="row utilizeFullHeight">
+            <div class="col-sm-6 utilizeHalfHeight">
+              <div class="title">Total Expenditure</div>
+              <div id="totalExpenditureGauge" class="gauge_margin_adjustment svg-container">
+									<script src="./gaugeCharts.js"></script>
+								</div>
+            </div>
+            <div class="col-sm-6 utilizeHalfHeight">
+              <div class="title">Total Savings</div>
+              <div id="totalSavingsGauge" class="gauge_margin_adjustment svg-container">
+									<script src="./gaugeCharts.js"></script>
+								</div>
+            </div>
+            <div class="col-sm-6 utilizeHalfHeight">
+              <div class="title">No. of Truck Rolls</div>
+              <div id="noOfTruckRollsGauge" class="gauge_margin_adjustment svg-container">
+									<script src="./gaugeCharts.js"></script>
+								</div>
+            </div>
+            <div class="col-sm-6 utilizeHalfHeight">
+              <div class="title">Truck Rolls Saved by App</div>
+              <div id="noOfTruckRollsSavedGauge" class="gauge_margin_adjustment svg-container">
+									<script src="./gaugeCharts.js"></script>
+								</div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
